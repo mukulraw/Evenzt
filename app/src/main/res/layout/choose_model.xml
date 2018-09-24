@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_check"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#000"
+        android:text="@string/asdasdasdasdasdasdasd"
+        android:gravity="center_vertical"
+        android:id="@+id/filter_name"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

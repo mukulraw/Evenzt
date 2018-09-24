@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/partydreamcolorpart"
+    tools:context="com.evenzt.MainActivity">
+
+
+
+
+        <include
+            layout="@layout/toolbar"/>
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/scroll"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="465dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/partydreamcolorpart"
+                android:scaleType="centerCrop"
+
+
+                />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_shade"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/date"
+                            android:id="@+id/user"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/created_by_bruce_wayne"
+                            android:textColor="#ffffff"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_22_july_2016"
+                            android:textColor="#ffffff"
+                            android:layout_alignParentStart="true"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textSize="18sp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_above="@+id/join"
+                            android:drawablePadding="5dp"
+                            android:id="@+id/date"
+                            android:gravity="center"
+                            android:drawableStart="@drawable/calendar"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/user"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:text="@string/party_in_the_batcave"
+                            android:id="@+id/name"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/lastDate"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="10dp"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:text="@string/join_before_20_august_2016"
+                            />
+
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_favorite_white_24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/like"
+                            android:layout_margin="10dp"
+                            />
+
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_share_white_24dp"
+                            android:layout_toLeftOf="@+id/like"
+                            android:layout_margin="10dp"
+                            />
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_blue"
+                            android:layout_alignParentEnd="true"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:minHeight="0dp"
+                            android:id="@+id/join"
+                            android:text="@string/join"
+                            android:layout_above="@+id/lastDate"
+                            android:textColor="#ffffff"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                    <android.support.design.widget.TabLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabIndicatorColor="#ffffff"
+                        android:id="@+id/tabs"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addresscolon"
+                        android:padding="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/address"
+                                android:paddingStart="10dp"
+                                android:gravity="center_vertical"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:drawingCacheQuality="high"
+                                android:drawableEnd="@drawable/navigate"
+                                />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            android:animateLayoutChanges="true"
+            android:layout_marginBottom="8dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:id="@+id/additional"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:text="@string/additional_details"
+                android:drawableEnd="@drawable/plus"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/additional_hide"
+                android:focusableInTouchMode="true"
+                android:visibility="gone"
+                android:padding="20dp"
+                android:text="@string/batcave"
+                />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            card_view:cardCornerRadius="2dp"
+
+
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/member"
+                    android:padding="10dp"
+                    android:id="@+id/members_joined"
+                    android:text="@string/_345_members_joined"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/submit_query"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableEnd="@drawable/chat"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+</LinearLayout>

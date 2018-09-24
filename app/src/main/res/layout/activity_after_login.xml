@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_after_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rsz_people"
+        android:scaleType="centerCrop"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark_shade"
+        />
+
+
+
+    <android.support.v4.view.SmoothViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/after_login_viewpager"
+        />
+
+
+
+    <TextSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:layout_marginTop="5dp"
+        android:id="@+id/title2"
+        android:textSize="34sp"
+        android:textColor="#fff"
+        android:padding="20dp"
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/google_circular"
+            android:padding="5dp"
+            android:id="@+id/google_signin"
+            android:layout_margin="10dp"
+            android:src="@drawable/google_red"
+            />
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/google_circular"
+            android:padding="5dp"
+            android:id="@+id/facebook_signin"
+            android:layout_margin="10dp"
+            android:src="@drawable/facebook_blue"
+            />
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

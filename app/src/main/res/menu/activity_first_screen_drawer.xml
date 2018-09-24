@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/all_request_page"
+        android:title="@string/requests"
+        android:icon="@drawable/request"
+        />
+
+
+
+
+<!--
+    <item
+        android:id="@+id/notification"
+        android:title="Notifications"
+        android:icon="@drawable/notification"
+        />
+-->
+
+    <item
+        android:id="@+id/posted_events"
+        android:title="@string/my_events"
+        android:icon="@drawable/posted"/>
+
+
+
+    <item
+        android:icon="@drawable/rating"
+        android:title="@string/my_review"
+        android:id="@+id/rating"/>
+
+    <item
+        android:id="@+id/friends"
+        android:icon="@drawable/friend"
+        android:title="@string/my_friends"/>
+
+
+    <!--
+    <item
+        android:id="@+id/block_list"
+        android:icon="@drawable/ic_block_black_24dp"
+        android:title="Blocked list"/>
+-->
+
+    <item
+        android:id="@+id/users"
+        android:title="@string/users"
+        android:icon="@drawable/users"
+        />
+
+
+
+    <item
+        android:id="@+id/view_profile"
+        android:title="@string/my_profile"
+        android:icon="@drawable/my_profile"
+        />
+
+
+    <item
+        android:id="@+id/nav_log_out"
+        android:icon="@drawable/logout"
+        android:title="@string/log_out" />
+
+</menu>

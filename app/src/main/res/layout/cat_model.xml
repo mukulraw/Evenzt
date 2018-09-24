@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleOverlay="true"
+        android:id="@+id/click"
+        app:mrl_rippleHover="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/listPreferredItemHeight"
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeight"
+    android:src="@drawable/dark_shade"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:id="@+id/cat_list_item"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/go"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd"
+        android:id="@+id/line"
+        android:visibility="gone"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        />
+
+    </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</RelativeLayout>

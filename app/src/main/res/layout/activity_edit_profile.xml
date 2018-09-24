@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efefef"
+
+    tools:context="com.evenzt.EditProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:id="@+id/edit_name"
+            android:padding="15dp"
+            android:inputType="text"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/age"
+            android:id="@+id/edit_age"
+            android:padding="15dp"
+            android:inputType="number"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/text_background"
+            android:id="@+id/edit_gender"
+            />
+
+
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/text_background"
+            android:id="@+id/edit_country"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="@string/phone"
+            android:id="@+id/edit_phone"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/interest"
+            android:inputType="text"
+            android:id="@+id/edit_interest"
+            android:padding="15dp"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/education"
+            android:id="@+id/edit_education"
+            android:padding="15dp"
+            android:inputType="textCapSentences"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_occupation"
+            android:hint="@string/occupation"
+            android:inputType="textAutoCorrect"
+            android:padding="15dp"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/organization"
+            android:id="@+id/edit_organ"
+            android:padding="15dp"
+            android:inputType="textCapSentences"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bio"
+            android:id="@+id/edit_bio"
+            android:padding="15dp"
+            android:inputType="textAutoComplete"
+            android:background="@drawable/text_background"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="bottom"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/edit_edit"
+            android:text="@string/save"
+            android:textColor="@color/colorAccent"
+
+            />
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

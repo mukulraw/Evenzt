@@ -1,0 +1,178 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/scroll_id"
+                >
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:gravity="center_vertical"
+                android:elevation="12dp"
+                android:outlineProvider="bounds"
+                android:background="@drawable/back_primary"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="12dp"
+                    android:id="@+id/toggle_tabs"
+                    style="@style/AppTabLayout"
+                    />
+
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_to_replace"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/toggle_view_pager"
+                />
+
+
+
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                map:mrl_rippleOverlay="true"
+                android:id="@+id/button2"
+                map:mrl_rippleHover="true"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create"
+                    android:background="@drawable/round_acc"
+                    android:elevation="12dp"
+                    android:textColor="#fff"
+                    />
+
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        map:menu="@menu/activity_first_screen_drawer"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        map:headerLayout="@layout/nav_header"
+        />
+
+    </android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>
