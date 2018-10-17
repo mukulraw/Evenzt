@@ -629,7 +629,7 @@ public class EventDetailsScreen extends AppCompatActivity {
                     i.setType("text/plain");
                     i.putExtra(Intent.EXTRA_SUBJECT, "Evenzt");
                     String sAux = "\nShare this Event\n\n";
-                    sAux = sAux + "http://evenzt.com/event-single.php?evtId=" + eventId + " \n\n";
+                    sAux = sAux + "http://evenzt.com/event-single.php?evtId=" + eventId + "&getId=true\n\n";
                     i.putExtra(Intent.EXTRA_TEXT, sAux);
                     startActivity(Intent.createChooser(i, "choose one"));
                 } catch(Exception e) {
